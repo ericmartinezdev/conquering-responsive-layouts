@@ -29,5 +29,12 @@ body {
   margin: 0 auto;
 
   padding: 2em;
-  height: 300px;
+
+  /* 2) Eliminated the hard-coded height */
+  /* height: 300px; */
+}
+
+/* 1) Added selector and set the width of the child to 50% */
+.intro-content {
+  width: 50%;
 }
