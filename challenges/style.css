@@ -23,26 +23,18 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-  width: 100%;
+.intro {
   background: #23424a;
-}
-
-.hero {
-  width: 80%;
-  max-width: 750px;
-  margin: 0 auto;
-/*   background: #23424a; */
   color: white;
   padding: 3.125em 0;
 }
 
-.intro-content {
-  width: 50%;
-}
-
-.more-content {
+.container {
   width: 80%;
   max-width: 750px;
   margin: 0 auto;
+}
+
+.intro-content {
+  width: 50%;
 }
