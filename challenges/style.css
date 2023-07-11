@@ -1,40 +1,73 @@
-/* INSTRUCTIONS
- *
- * 1) Keep the text inside .intro-content
- *    in the same place, but have the background
- *    extend from one side of the viewport
- *    to the other, no matter how wide or narrow
- *    the browser is.
- *
- * 2) Limit the maximum width of the text in the
- *    bottom area.
- *
- * You may modify the HTML if needed
- * (you probably should for this challenge)
- *
- */
-
- * {
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .intro {
   background: #23424a;
   color: white;
-  padding: 3.125em 0;
+  padding: 9.25em 7.625em;
 }
 
 .container {
-  width: 80%;
-  max-width: 750px;
-  margin: 0 auto;
+  width: 55%;
+  max-width: 710px;
+  /* margin: 0 auto; */
 }
 
-.intro-content {
-  width: 50%;
+.intro-content h1 {
+  font-size: 2.95rem;
+  font-weight: 700;
+}
+
+.intro-content p {
+  font-size: 1.3125rem;
+  line-height: 1.97125rem;
+  color:#d9d9d9;
+  font-weight: 400;
+}
+
+.intro-content button {
+  font-size: 1.1325rem;
+  font-weight: 700;
+  background: #38CFD9;
+  color:#072a2d;
+  padding: 1rem 3rem;
+  border-radius: 32px;
+  border: none;
+  margin-top: 3.25rem;
+  /* margin-bottom: 1rem; */
+}
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .intro-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .intro {
+    background: #23424a;
+    color: white;
+    padding: 9.25em 0;
+  }
+
+  .container {
+    width: 80%;
+  }
 }
