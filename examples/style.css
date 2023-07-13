@@ -1,20 +1,68 @@
-* { box-sizing: border-box;}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3125;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 .container {
-  background: #23424A;
-  color: white;
-
   width: 80%;
+  max-width: 1100px;
   margin: 0 auto;
-
-  /* Do not use height ever? */
-  /* height: 300px; */
-
-  padding: 5em; /* 16 * 5 = 80px */
 }
 
+.row {
+  /* display: flex => flex container */
+  display: flex;
+
+  /* default = row */
+  flex-direction: row;
+}
+
+.col {
+  /* these are now flex items */
+  background-color: limegreen;
+  margin: 10px;
+}
+
+/* Selector trick to create the flex gap */
+.col + .col {
+  margin-left: 100px;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__text {
+  width: 60%;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 700;
+  background-color: #38cfd9;
+  padding: .75em 2rem;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: .75;
+}
