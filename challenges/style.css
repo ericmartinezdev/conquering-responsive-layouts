@@ -89,3 +89,35 @@ h1 {
 .btn:focus {
   opacity: .75; 
 }
+
+/* ********* Custom CSS *********** */
+.two-col {
+  margin-top: 2em;
+}
+
+.two-col__title {
+  margin-top: 1.125em;
+  margin-bottom: .5em;
+  font-size: 2.125rem;
+}
+
+.two-col__text {
+  margin-bottom: 2.8em;
+}
+
+.two-col__first-col {
+  width: 60%;
+}
+
+.two-col__first-col h2 {
+  color: #136C72;
+}
+
+
+.two-col__sidebar {
+  background: #136c72;
+  color: #fff;
+  text-align: center;
+  width: 35%;
+  padding: 0 1.5em;
+}
