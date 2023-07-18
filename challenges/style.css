@@ -75,7 +75,7 @@ header {
 }
 
 .logo {
-  margin-right: 1em;
+  /* margin-right: 1em; */
 }
 
 .nav {
@@ -91,6 +91,10 @@ header {
   display: flex;
   font-size: .9rem;
   align-items: center;
+}
+
+.nav__list--primary {
+  margin: 0 auto;
 }
 
 .nav__item + .nav__item {
