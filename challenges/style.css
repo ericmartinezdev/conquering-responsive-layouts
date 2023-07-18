@@ -74,20 +74,34 @@ header {
   padding: 1em 0;
 }
 
+.logo {
+  margin-right: 1em;
+  border: 2px solid yellow;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* This will make display flex to use available space instead of shrinking it. */
+  /* width: 100%; */
+  flex-grow: 1;
+  border: 2px solid red;
+}
+
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-
+  
   display: flex;
+
+  font-size: .9rem;
 }
 
-.nav__item {
-  margin-right: 1em;
-}
-
-.nav__item--push-right {
-  margin-left: auto;
+.nav__item + .nav__item {
+  margin-left: 1em;
 }
 
 .nav__link {
