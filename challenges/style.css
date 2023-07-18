@@ -76,27 +76,20 @@ header {
 
 .logo {
   margin-right: 1em;
-  border: 2px solid yellow;
-
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* This will make display flex to use available space instead of shrinking it. */
-  /* width: 100%; */
   flex-grow: 1;
-  border: 2px solid red;
 }
 
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  
   display: flex;
-
   font-size: .9rem;
 }
 
