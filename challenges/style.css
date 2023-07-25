@@ -26,12 +26,15 @@ img {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.751rem;
   margin-top: 0;
+  margin-bottom: .55em;
+  line-height: 1.25;
 }
 
 .section-title {
-  color: #87629a;
+  color: #136c72;
+  font-size: 3rem;
 }
 
 .btn {
@@ -40,9 +43,13 @@ h1 {
   text-transform: uppercase;
   color: #23424a;
   font-weight: 900;
+  font-size: 1.75rem;
   background-color: #38cfd9;
-  padding: 0.75em 2em;
+  padding: .8em 2em;
+  margin-top: 0;
+  margin-bottom: 1em;
   border-radius: 100px;
+  letter-spacing: .08em;
 }
 
 .btn:hover,
@@ -62,6 +69,10 @@ header {
   background: #136c72;
   padding: 1em 0;
   text-align: center;
+  /* min-height: 5em; */
+  position: absolute;
+  z-index: 100;
+  width: 100%;
 }
 
 .nav {
@@ -86,6 +97,45 @@ header {
 .nav-toggle:focus,
 .nav-toggle:hover {
   opacity: 0.75;
+}
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.8em;
+}
+
+.nav__item {
+  text-transform: uppercase;
+}
+
+.nav__list--primary .nav__item + .nav__item {
+  margin-top: 1.7em;
+}
+
+.nav__list--secondary .nav__item + .nav__item {
+  margin-top: 2.6em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__list--primary {
+  margin-bottom: 3.5em;
+}
+
+.nav__list--secondary {
+  margin-bottom: 2.8em;
+}
+
+.nav__link--button {
+  padding: .5em 1em;
+  font-weight: 900;
+  border-radius: 100px;
+  color: #136c72;
+  background-color: #fff;
 }
 
 .hamburger {
@@ -122,36 +172,45 @@ header {
    Works the same :) */
 .nav {
   visibility: hidden;
-  height: 0;
   position: absolute;
 }
 
 .nav--visible {
   visibility: visible;
-  height: auto;
+  /* height: auto; */
   position: relative;
+  background: #136c72;
+  /* z-index: 100; */
 }
 
-.logo {
-  height: 30px;
+.logo img {
+  height: 2.1em;
 }
 
 .hero {
-  padding: 100px 0;
+  padding-top: 6.3em;
   background-color: #23424a;
   color: #fff;
 }
 
 .hero__img {
   margin-top: 2em;
+  margin-bottom: 3em;
 }
 
 .hero p {
-  margin-bottom: 3em;
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+  font-size: 1.7rem;
 }
 
 .main {
   margin-top: 3em;
+}
+
+.section-p {
+  line-height: 1.6;
+  font-size: 1.7rem;
 }
 
 .sidebar {
@@ -159,6 +218,12 @@ header {
   text-align: center;
   color: #fff;
   background-color: #136c72;
+  line-height: 1.5em;
+  font-size: 2rem;
+}
+
+.sidebar-title {
+  font-size: 3rem;
 }
 
 @media (min-width: 800px) {
