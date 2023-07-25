@@ -9,109 +9,15 @@
 
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-:root {
-  --hero-title-color: #824936;
-  --section-text-color: #F3EED9;
-  --section-bg-dark: #222C2A;
-  --title-font-family: 'Playfair Display', serif;
-  --subtitle-font-family: 'Roboto', sans-serif;
-}
-
 body {
   margin: 0;
-  font-family: var(--subtitle-font-family);
-  font-size: 1.3125rem;
-  line-height: 1.6;
-  color: var(--section-bg-dark);
-}
-
-img { 
-  max-width: 100%;
-}
-
-h1, h2 {
-  font-family: var(--title-font-family);
-  font-weight: 900;
-  margin-top: 0;
-  line-height: 1.1;
-}
-
-section {
-  padding: 4em 0;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1128px;
-}
-
-.section-title {
-  font-size: 2.25rem;
-  color: var(--section-text-color);
-}
-
-.section-title--dark {
-  color: var(--hero-title-color);
-}
-
-.intro {
-  background: var(--section-text-color);
-  padding: 200px 0;
-  text-align: center;
-  color: var(--hero-title-color);
-  min-height: 660px;
-  display: flex;
-  align-items: center;
-}
-
-.intro__text {
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  font-size: 1.125rem;
-  color: var(--section-bg-dark);
-  margin: 0 0 .25em;
-}
-
-.intro__title {
-  font-size: 3rem;
-}
-
-.section-three {
-  background-color: var(--section-bg-dark);
-  color: #fff;
-}
-
-.section-four {
-  background-color: var(--hero-title-color); 
-  color: #fff;
-}
-
-@media (min-width: 800px) {
-  .row {
-    display: flex;
-  }
-  
-  .col {
-    width: 100%;
-  }
-  
-  .col + .col {
-    margin-left: 5em;
-  }
-  
-  .intro__title {
-    font-size: 3.75rem; 
-  }
-=======
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
 }
 
@@ -125,23 +31,23 @@ h1 {
 }
 
 .section-title {
-  color: #87629A;
+  color: #87629a;
 }
 
 .btn {
   display: inline-block;
   text-decoration: none;
-  text-transform: uppercase; 
-  color: #23424A;
+  text-transform: uppercase;
+  color: #23424a;
   font-weight: 900;
-  background-color: #38CFD9;
-  padding: .75em 2em;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
   border-radius: 100px;
 }
 
 .btn:hover,
 .btn:focus {
-  opacity: .75; 
+  opacity: 0.75;
 }
 
 .container {
@@ -162,26 +68,24 @@ header {
   width: 100%;
 }
 
-
-
 .nav-toggle {
   cursor: pointer;
   border: 0;
-  width: 3em;
-  height: 3em;
+  width: 3rem;
+  height: 3rem;
   padding: 0em;
   border-radius: 50%;
-  background: #072A2D;
+  background: #072a2d;
   color: white;
   transition: opacity 250ms ease;
-  
+
   position: absolute;
   left: 0;
 }
 
 .nav-toggle:focus,
 .nav-toggle:hover {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .hamburger {
@@ -200,7 +104,7 @@ header {
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   width: 100%;
 }
 
@@ -213,9 +117,9 @@ header {
 }
 
 /* made changes here from video
- to make it more accessible.
- 
- Works the same :) */
+   to make it more accessible.
+   
+   Works the same :) */
 .nav {
   visibility: hidden;
   height: 0;
@@ -226,24 +130,21 @@ header {
   visibility: visible;
   height: auto;
   position: relative;
-} 
-
+}
 
 .logo {
   height: 30px;
 }
 
-
 .hero {
   padding: 100px 0;
-  background-color: #23424A;
-  color: #FFF;
+  background-color: #23424a;
+  color: #fff;
 }
 
 .hero__img {
   margin-top: 2em;
 }
-
 
 .hero p {
   margin-bottom: 3em;
@@ -253,54 +154,43 @@ header {
   margin-top: 3em;
 }
 
-
 .sidebar {
   padding: 1em;
   text-align: center;
   color: #fff;
   background-color: #136c72;
-
 }
 
-
-
 @media (min-width: 800px) {
-
-  
   .nav-toggle {
-      display: none;
+    display: none;
   }
 
   .nav {
-      visibility: visible;
-      display: flex;
-      height: auto;
+    visibility: visible;
+    display: flex;
   }
 
   .row {
-      display: flex;
-      justify-content: space-between;
-
+    display: flex;
+    justify-content: space-between;
   }
 
   .hero__text {
-      width: 62%;
+    width: 62%;
   }
-  
+
   .hero__img {
-      width: 32%;
-      align-self: flex-start;
-      margin: 0;
+    width: 32%;
+    align-self: flex-start;
+    margin: 0;
   }
-  
+
   .primary-content {
-      width: 62%;
+    width: 62%;
   }
 
   .sidebar {
-      width: 32%;
+    width: 32%;
   }
-  
-  
->>>>>>> f033bde (Navigation challenge - files starting point)
 }
