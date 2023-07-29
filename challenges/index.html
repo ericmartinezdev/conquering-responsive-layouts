@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="container row">
+    <div class="container nav__row">
       <button class="nav-toggle" aria-label="open navigation">
         <span class="hamburger"></span>
       </button>
@@ -37,19 +37,23 @@
   </header>
 
   <section class="hero">
-    <div class="container row">
-      <h1 class="section__title">
-        Responsive layouts
-        <span class="section__title-alt-color">don't have to be a struggle</span>
-      </h1>
-      <div>
-        <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button class="hero__button">i want to learn</button>    
+    <div class="container">
+      <div class="hero__content row">
+        <h1 class="section__title">
+          Responsive layouts
+          <span class="section__title-alt-color">don't have to be a struggle</span>
+        </h1>
+        <div class="hero__right">
+          <div class="hero__right__content">
+            <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="hero__button">i want to learn</button>    
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <main class="main">
-    <section class="container row">
+    <section class="container main-row">
       <div class="col">
         <h2 class="main__title">Mobile-first</h2>
         <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -65,7 +69,7 @@
     </section>
   </main>
   <section class="secondary container row">
-    <div class="col">
+    <div class="col secondary__content">
       <h2 class="secondary__title">It doesn’t have to be so hard</h2>
       <p class="secondary__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       <img src="../img/the-image.jpg" alt="3 drawings of outlines">
@@ -95,10 +99,10 @@
   <footer class="footer">
     <div class="container">
       <h1 class="footer__title">just scratching the surface</h1>
-      <div class="row">
+      <div class="footer__row">
         <div class="footer-text">
           <h2 class="footer-nav__title">About our company</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p class="footer-nav__link">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <nav class="footer-nav">
           <div class="nav-1">
@@ -111,7 +115,7 @@
           </div>
           <div class="nav-2">
             <ul class="footer-nav__list">
-              <li class="footer-nav__title"><a class="footer-nav__link" href="#">Other things</a></li>
+              <li class="footer-nav__title">Other things</li>
               <li class="footer-nav__item"><a class="footer-nav__link" href="#">Lorem ipsum</a></li>
               <li class="footer-nav__item"><a class="footer-nav__link" href="#">dolor</a></li>
               <li class="footer-nav__item"><a class="footer-nav__link" href="#">sit amet</a></li>
@@ -120,7 +124,7 @@
           </div>
           <div class="nav-3">
             <ul class="footer-nav__list">
-              <li class="footer-nav__title"><a class="footer-nav__link" href="#">And more</a></li>
+              <li class="footer-nav__title">And more</li>
               <li class="footer-nav__item"><a class="footer-nav__link" href="#">Lorem ipsum</a></li>
               <li class="footer-nav__item"><a class="footer-nav__link" href="#">dolor</a></li>
               <li class="footer-nav__item"><a class="footer-nav__link" href="#">sit amet</a></li>
