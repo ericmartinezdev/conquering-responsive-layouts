@@ -322,6 +322,14 @@ img {
     margin: 0;
   }
 
+  .nav__item {
+    margin-left: 1.4em;
+  }
+
+  .hero__content {
+    padding-top: 4em;
+  }
+
   .main-row {
     display: flex;
   }
@@ -371,11 +379,11 @@ img {
   }
 
   .footer-nav {
-    /* text-align: left; */
     display: flex;
     margin: 0 0 0 2em;
     justify-content: space-between;
     width: 60%;
+    flex-wrap: nowrap;
   }
 
   .footer__row {
