@@ -1,23 +1,22 @@
 :root {
   --main-font: 'Roboto', sans-serif;
   --main-color: #23424A;
-  --secondary-color: #F5F5F5;
+  --secondary-color: #FFF;
   --button-secondary-color: #38CFD9;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: var(--main-font);
+  font-size: 1.3rem;
 }
 
-.intro {
-  background: var(--main-color);
-  color: var(--secondary-color);
-  font-family: var(--main-font);
+h1 {
+  font-size: 3rem;
 }
 
 .container {
@@ -26,27 +25,32 @@ body {
   margin: 0 auto;
 }
 
-.content {
-  width: 70%;
-  padding: 4em 0;
+.hero {
+  padding: 100px 0;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
 }
 
-.content__title {
-  font-size: 3em;
+.hero__text {
+  width: 60%;
 }
 
-.content__p {
-  font-size: 1.1em;
+.hero p {
+  margin-bottom: 3em;
 }
 
-.main_button {
-  font-size: 1.1em;
-  font-weight: 700;
+.btn {
+  display: inline-block;
+  background-color: var(--button-secondary-color);
+  padding: .75em 2em;
+  border-radius: 100px;
   text-transform: uppercase;
-  background: var(--button-secondary-color);
+  text-decoration: none;
+  font-weight: 700;
   color: var(--main-color);
-  border: none;
-  border-radius: 50px;
-  padding: 1em 2em;
-  margin: 2em 0 3em;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: .75;
 }
