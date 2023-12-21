@@ -3,6 +3,9 @@
   --main-color: #23424A;
   --secondary-color: #FFF;
   --button-secondary-color: #38CFD9;
+  --third-color: #136C72;
+  --odd-font-color: #87629A;
+  --basic-font-color: #3A3A3A;
 }
 
 *, *::before, *::after {
@@ -53,4 +56,33 @@ h1 {
 .btn:hover,
 .btn:focus {
   opacity: .75;
+}
+
+.row {
+  display: flex;
+  gap: 1em;
+}
+
+.section {
+  text-align: center;
+  padding: 3em 0;
+  font-size: 1.3rem;
+  color: var(--basic-font-color)
+}
+
+.section__title {
+  color: var(--odd-font-color);
+  font-size: 2.2rem;
+}
+
+.section-2 {
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 3em 0;
+  font-size: 1.3rem;
+}
+
+.section-2__title {
+  font-size: 2.2rem;
 }
