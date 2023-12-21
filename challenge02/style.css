@@ -63,19 +63,19 @@ h1 {
   gap: 1em;
 }
 
-.section {
+.three-col {
   text-align: center;
   padding: 3em 0;
   font-size: 1.3rem;
   color: var(--basic-font-color)
 }
 
-.section__title {
+.three-col__title {
   color: var(--odd-font-color);
   font-size: 2.2rem;
 }
 
-.section-2 {
+.two-col {
   background-color: var(--third-color);
   color: var(--secondary-color);
   text-align: center;
@@ -83,6 +83,6 @@ h1 {
   font-size: 1.3rem;
 }
 
-.section-2__title {
+.two-col__title {
   font-size: 2.2rem;
 }
