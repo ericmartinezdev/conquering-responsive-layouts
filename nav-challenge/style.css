@@ -73,10 +73,16 @@ header {
     padding: .5em 0;
 }
 
+.nav {
+    padding: .6em;
+}
+
 .nav__list {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    gap: 1em;
 }
 
 .nav__link {
