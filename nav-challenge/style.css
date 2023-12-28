@@ -71,18 +71,23 @@ h1 {
 
 header {
   background: #136c72;
-  padding: 0.5em 0;
+  padding: 1em 0;
 }
 
 .nav {
-    padding: .7em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  
   display: flex;
+  align-items: center;
+
+  font-size: .9rem;
 }
 
 .nav__link {
@@ -91,12 +96,8 @@ header {
   text-transform: uppercase;
 }
 
-.nav__item {
-    margin-right: 1em;
-}
-
-.nav__item--push-right {
-    margin-left: auto;
+.nav__item + .nav__item {
+    margin-left: 1em;
 }
 
 .nav__link--button {
