@@ -82,14 +82,17 @@ header {
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-content: flex-start;
-  gap: 1em;
+  display: flex;
 }
 
 .nav__link {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.nav__item {
+    margin-right: 1em;
 }
 
 .nav__link--button {
