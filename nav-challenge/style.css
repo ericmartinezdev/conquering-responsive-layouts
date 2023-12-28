@@ -95,6 +95,10 @@ header {
     margin-right: 1em;
 }
 
+.nav__item--push-right {
+    margin-left: auto;
+}
+
 .nav__link--button {
   background: #fff;
   color: #136c72;
