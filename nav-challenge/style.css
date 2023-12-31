@@ -77,6 +77,12 @@ header {
 .nav {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    margin-right: 1em;
 }
 
 .nav__list {
