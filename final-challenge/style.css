@@ -1,0 +1,19 @@
+body {
+  --main-color-dark: #2e323f;
+  --secondary-color: #3b4050;
+  --color-text: #6f737f;
+  --color-light: #fff;
+  --main-color-light: #a59678;
+
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+img {
+  width: 100%;
+}
