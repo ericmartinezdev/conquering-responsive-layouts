@@ -4,6 +4,7 @@ body {
   --color-text: #6f737f;
   --color-light: #fff;
   --main-color-light: #a59678;
+  --nav-text-color: #d9d9d9;
 
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -16,4 +17,137 @@ h1, h2, h3 {
 
 img {
   width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+
+  margin: 0 auto;
+}
+
+/* ******** Start of Nav ******** */
+
+.header {
+  background-color: var(--main-color-dark);
+  padding: 0 0 .5em;
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.nav {
+  padding: 1em .5em;
+  text-transform: uppercase;
+  text-align: center;
+  visibility: hidden;
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 1.4rem;
+  height: 3rem;
+  padding: 0em;
+  border-radius: 50%;
+  background: var(--main-color-dark);
+  transition: opacity 250ms ease;
+
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger__container {
+  position: relative;
+}
+
+.hamburger {
+  width: 100%;
+  position: relative;
+}
+
+.hamburger, 
+.hamburger::before, 
+.hamburger::after { 
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background-color: var(--nav-text-color);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav--visible {
+  visibility: visible;
+}
+
+.nav--height {
+  min-height: 300px;
+}
+
+.logo {
+  width: 3rem;
+  margin: 0 auto;
+  padding-top: .9em;
+}
+
+.nav__list {
+  font-family: 'Oswald', sans-serif;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__item + .nav__item {
+  padding-top: 1em;
+}
+
+.link__item {
+  color: var(--nav-text-color);
+  text-decoration: none;
+}
+
+.nav__list--primary {
+  padding-bottom: 1em;
+}
+
+.link__item--btn {
+  margin-top: .5em;
+}
+
+.link__btn {
+  background-color: var(--main-color-light);
+
+  padding: .5em 1.3em;
+  border-radius: 50px;
+}
+
+/* ******** End of Nav ******** */
+
+.hero {
+  margin-top: 4em;
 }

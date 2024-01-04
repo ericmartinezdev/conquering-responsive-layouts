@@ -10,18 +10,23 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="logo"><img src="img/logo.svg" alt="CRL logo"></div>
-      <nav class="nav">
-        <ul class="nav__list nav__list--primary">
-          <li class="nav__item"><a class="link__item" href="#">home</a></li>
-          <li class="nav__item"><a class="link__item" href="#">about</a></li>
-          <li class="nav__item"><a class="link__item" href="#">contact</a></li>
-        </ul>
-        <ul class="nav__list nav__list--secondary">
-          <li class="nav__item"><a class="link__item" href="#">sign in</a></li>
-          <li class="nav__item"><a class="link__item link__button" href="#">sign up</a></li>
-        </ul>
-      </nav>
+      <div class="hamburger__container">
+        <button class="nav-toggle">
+          <span class="hamburger"></span>
+        </button>
+        <div class="logo"><img src="img/logo.svg" alt="CRL logo"></div>
+        <nav class="nav">
+          <ul class="nav__list nav__list--primary">
+            <li class="nav__item"><a class="link__item" href="#">home</a></li>
+            <li class="nav__item"><a class="link__item" href="#">about</a></li>
+            <li class="nav__item"><a class="link__item" href="#">contact</a></li>
+          </ul>
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item"><a class="link__item" href="#">sign in</a></li>
+            <li class="nav__item link__item--btn"><a class="link__item link__btn" href="#">sign up</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -86,7 +91,7 @@
   <footer class="footer">
     <div class="container">
       <h1 class="footer__title">just scratching the surface</h1>
-      <div class="footer--nav__list">
+      <nav class="footer--nav">
         <div class="row">
           <ul class="footer--about col">
             <h2 class="footer__subtitle">About our company</h2>
@@ -113,9 +118,9 @@
             <li class="footer__item">consectetur</li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
   </footer>
-  
+  <script src="script.js"></script>
 </body>
 </html>
