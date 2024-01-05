@@ -302,3 +302,66 @@ img {
 }
 
 /* ******** End of Footer ******** */
+
+@media screen and (min-width: 700px) {
+  .header {
+    position: static;
+    padding: 0;
+  }
+
+  .hamburger__container {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav--height {
+    min-height: 0;
+  }
+
+  .nav {
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    position: static;
+    transform: none;
+    padding: 0;
+  }
+
+  .nav__item + .nav__item {
+    padding-top: 0;
+    padding-left: 1em;
+  }
+
+  .link__item--btn {
+    margin-top: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__list--primary {
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+}
