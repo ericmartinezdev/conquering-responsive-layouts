@@ -190,10 +190,31 @@ img {
 
 /* ******** Start of Section primary ******** */
 .section__primary {
-  background-color: var(--color-text);
+  background-color: var(--nav-text-color);
+  
+  padding: 3em 0;
+  text-align: center;
+}
+
+.section__title {
+  font-size: 1.875rem;
+  color: var(--main-color-light);
+}
+
+.col + .col {
+  padding-top: 1em;
+}
+
+.section__text {
+  font-size: 1.125rem;
+  color: var(--color-text);
+  margin: .8em 0;
 }
 
 /* ******** End of Section primary ******** */
 
+.section__secondary {
+  background-color: var(--color-light);
+}
 
 
