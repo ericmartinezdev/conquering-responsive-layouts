@@ -181,6 +181,7 @@ img {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
 
+  display: inline-block;
   border-radius: 50px;
   padding: .3em 1.5em;
   text-transform: uppercase;
@@ -354,6 +355,7 @@ img {
 
   .row {
     display: flex;
+    justify-content: space-between;
   }
 
   .nav__list {
@@ -363,5 +365,40 @@ img {
   .nav__list--primary {
     padding-bottom: 0;
     margin: 0 auto;
+  }
+
+  .hero {
+    padding-top: 3em;
+  }
+
+  .hero__title {
+    width: 40%;
+    font-size: 3rem;
+    align-self: flex-end;
+  }
+
+  .hero__text {
+    width: 50%;
+    align-self: flex-end;
+  }
+
+  .section-article-two.col, .section-article-three.col {
+    padding-top: 0;
+  }
+
+  .section-article-one, .section-article-two, .section-article-three {
+    width: 30%;
+  }
+
+  .article-one {
+    margin-top: 0;
+  }
+
+  .section__secondary--primary-section {
+    width: 60%;
+  }
+
+  .section__secondary--secondary__section {
+    width: 35%;
   }
 }
