@@ -159,8 +159,9 @@ img {
 }
 
 .hero__title {
-  font-size: 2.3rem;
+  font-size: 3rem;
   color: var(--color-light);
+  line-height: 1.1em;
 }
 
 .title__secondary--color {
@@ -171,8 +172,6 @@ img {
   color: var(--nav-text-color);
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
-
-  padding-bottom: .5em;
 }
 
 .action__button {
@@ -369,18 +368,30 @@ img {
   }
 
   .hero {
-    padding-top: 3em;
+    padding: 4em 0 6em;
+  }
+
+  .hero__container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .hero__title {
     width: 40%;
-    font-size: 3rem;
+    font-size: 4rem;
     align-self: flex-end;
+    line-height: .9em;
   }
 
   .hero__text {
     width: 50%;
+    display: flex;
+    flex-direction: column;
     align-self: flex-end;
+  }
+
+  .action__button {
+    align-self: flex-start;
   }
 
   .section-article-two.col, .section-article-three.col {
@@ -391,16 +402,14 @@ img {
     width: 30%;
   }
 
-  .article-one {
-    margin-top: 0;
-  }
-
-  .section__secondary--primary-section {
-    width: 60%;
-  }
-
   .section__secondary--secondary__section {
-    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .secondary__section--secondary__title {
+    font-size: 1.5rem;
   }
 
   .footer--nav {
@@ -423,4 +432,56 @@ img {
     padding-top: 1em;
     margin: 0;
   }
+}
+
+@media screen and (min-width: 1000px) { 
+
+  .hero {
+    padding: 4em 0 6em;
+  }
+
+
+  .hero__title {
+    font-size: 5.625rem;
+  }
+
+  .hero__secondary-text {
+    font-size: 1.5rem;
+    margin: 0;
+
+    padding-bottom: 1em;
+  }
+
+  .action__button {
+    align-self: flex-start;
+  }
+
+  .section__secondary--row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section__secondary--primary-section {
+    width: 60%;
+  }
+
+  .section__secondary--secondary__section {
+    width: 35%;
+  }
+
+  .section-article-two.col, .section-article-three.col {
+    padding-top: 0;
+  }
+
+  .section-article-one, .section-article-two, .section-article-three {
+    width: 30%;
+  }
+
+  .section__secondary--secondary__section {
+    display: block;
+  }
+  .article-one {
+    margin-top: 0;
+  }
+
 }
